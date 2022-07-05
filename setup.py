@@ -44,5 +44,10 @@ setup(
     url='',
     long_description=read('README.md', fix_header=True),
     long_description_content_type='text/markdown',
-    install_requires=Path('requirements.txt').read_text().splitlines(),
+    install_requires=[
+        'fire',
+        'python-libnmap',
+        'six',
+        'termcolor'
+      ],
 )
