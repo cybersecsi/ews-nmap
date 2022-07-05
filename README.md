@@ -7,9 +7,12 @@
     <img src="https://raw.githubusercontent.com/cybersecsi/ews-nmap/main/assets/logo-light-mode.png" alt= "ews-nmap" width="300px">
   </picture>
 </h1>
-<p align="center">
+<h2 align="center">
     <b>ews-nmap</b>
-<p>
+<h2>
+<p align="center">
+    <b>E</b>xtract <b>W</b>eb <b>S</b>ervers from Nmap
+</p>
 
 <p align="center">
   <a href="https://github.com/cybersecsi/ews-nmap/blob/main/README.md"><img src="https://img.shields.io/badge/Documentation-complete-green.svg?style=flat"></a>
