@@ -5,7 +5,7 @@ import traceback
 from libnmap.parser import NmapParser
 from os import path, makedirs
 
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 OUTPUT_DIR = 'ewsnmap-output'
 
 def banner():
@@ -36,7 +36,7 @@ def check_or_create_dir(dir_path):
         makedirs(dir_path)
         info(f"Directory {dir_path} created")
 
-def process(nmap_xml_file,  output_dir = OUTPUT_DIR, output = 'output.txt'):
+def process(nmap_xml_file,  output_dir = OUTPUT_DIR, output = 'output.txt', append=False):
     """
     Extract web servers from an Nmap XML file
     """
@@ -62,7 +62,9 @@ def process(nmap_xml_file,  output_dir = OUTPUT_DIR, output = 'output.txt'):
 
     check_or_create_dir(output_dir)
 
-    with open(path.join(output_dir, output),  'w', encoding='utf-8', newline='') as file:
+    file_mode = 'a+' if append else 'w'
+
+    with open(path.join(output_dir, output), file_mode, encoding='utf-8', newline='') as file:
         info(f"Store evidences in {path.join(output_dir, output)}")
         for target in targets:
             file.write(f"{target}\n")
