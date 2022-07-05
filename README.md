@@ -20,6 +20,19 @@
 </p>
 
 
+``ews-nmap`` (**E**xtract **W**eb **S**ervers from Nmap) is a simple script that allows you to easily find all web servers from the XML output of Nmap. 
+The script performs a simple scraping of the informations in the XML file and identifies HTTP/S services.
+
+## Table of Contents
+- [Getting Started](#getting-started)
+  - [Example](#example)
+  - [Install & Run](#install--run)
+  - [Run without installing](#run-without-installing)
+    - [Prerequisites](#prerequisites)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [License](#license)
+
 ##  Getting Started  
 Run ``nmap``  and save XML output, for example:   
 ```  
