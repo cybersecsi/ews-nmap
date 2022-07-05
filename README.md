@@ -19,11 +19,8 @@
   <a href="https://github.com/cybersecsi/ews-nmap/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache2-blue.svg"></a>
 </p>
 
-
-``ews-nmap`` (**E**xtract **W**eb **S**ervers from Nmap) is a simple script that allows you to easily find all web servers from the XML output of Nmap. 
-The script performs a simple scraping of the informations in the XML file and identifies HTTP/S services.
-
 ## Table of Contents
+- [Overview](#overview)
 - [Getting Started](#getting-started)
   - [Example](#example)
   - [Install & Run](#install--run)
@@ -32,6 +29,10 @@ The script performs a simple scraping of the informations in the XML file and id
 - [Contributing](#contributing)
 - [Credits](#credits)
 - [License](#license)
+
+## Overview
+``ews-nmap`` (**E**xtract **W**eb **S**ervers from Nmap) is a simple script that allows you to easily find all web servers from the XML output of Nmap. 
+The script performs a simple scraping of the informations in the XML file and identifies HTTP/S services.
 
 ##  Getting Started  
 Run ``nmap``  and save XML output, for example:   
