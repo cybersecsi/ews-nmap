@@ -1,0 +1,1 @@
+from .ewsnmap import main
