@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ews-nmap"
+version = "1.0.4"
+description = "Extract web servers from an Nmap XML file"
+authors = ["SecSI <dev@secsi.io>"]
+license = "LICENSE"
+readme = "assets/PYPI_README.md"
+packages = [{include = "ewsnmap"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-libnmap = "^0.7.3"
+fire = "^0.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+ewsnmap = 'ewsnmap:main'
