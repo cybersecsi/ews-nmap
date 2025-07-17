@@ -73,7 +73,9 @@ def process(nmap_xml_file,  output_dir = OUTPUT_DIR, output = 'output.txt', appe
 def main():
     try:
         banner()
-        fire.Fire(process)
+        fire.core.Display = lambda lines, out: out.write(
+            "\n".join(lines) + "\n")
+        fire.Fire(process, command=None)
     except Exception as e:
         err(str(e))
 
