@@ -5,7 +5,7 @@ import traceback
 from libnmap.parser import NmapParser
 from os import path, makedirs
 
-VERSION = '1.0.5'
+VERSION = '1.0.6'
 OUTPUT_DIR = 'ewsnmap-output'
 
 def banner():
