@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ews-nmap"
-version = "1.0.4"
+version = "1.0.5"
 description = "Extract web servers from an Nmap XML file"
 authors = ["SecSI <dev@secsi.io>"]
 license = "LICENSE"
