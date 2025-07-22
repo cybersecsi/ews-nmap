@@ -47,7 +47,7 @@ The output of the tool is like the following:
 ### Install & Run
 To install it you just need to run:
 ```
-pip install ews-nmap
+pipx install ews-nmap
 ```
 
 ### Run without installing
@@ -61,7 +61,7 @@ chmod +x ewsnmap/ewsnmap.py
 
 ```   
 Usage: ewsnmap.py NMAP_XML_FILE <flags>
-  optional flags:        --output-dir | --output
+  optional flags:        --output_dir | --txtout | --csvout
   
 ```  
 
@@ -70,9 +70,9 @@ To run the parser:
 ewsnmap.py <nmap_output.xml>   
 ``` 
 
-the script will generate a file ``output.txt`` in ``ewsnmap-output`` dir. If you want to set the output file and the output dir:   
+the script will generate a file ``output.txt`` and a file ``output.csv`` in ``ewsnmap-output`` dir. If you want to set the output file and the output dir:   
 ```   
-ewsnmap.py <nmap_output.xml>  --output <output_csv_file> --dir <output_directory>
+ewsnmap.py <nmap_output.xml>  --csvout <output_csv_file> --txtout <output_txt_file> --output_dir <output_directory>
 ``` 
 
 ## Contributing
@@ -88,6 +88,7 @@ Contributions are what make the open source community such an amazing place to b
 ## Credits
 ``ews-nmap`` is proudly developed [@SecSI](https://secsi.io) by:
 - [Angelo Delicato](https://github.com/thelicato)
+- [Emanuele Galdi](https://github.com/emalderson)
 
 ## License
 Distributed under Apache 2 License. See `LICENSE` for more information. 

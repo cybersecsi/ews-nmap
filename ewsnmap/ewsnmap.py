@@ -18,8 +18,8 @@ def banner():
         ███████║███████╗╚██████╗███████║██║
         ╚══════╝╚══════╝ ╚═════╝╚══════╝╚═╝
 
-        https://wwww.secsi.io - https://github.com/cybersecsi/ews-nmap
-      ''')  
+        https://wwww.secsi.io - https://github.com/cybersecsi/ews-nmap - {0}
+      '''.format(VERSION))
 
 def info(msg):
     print("[+] {}".format(msg))
