@@ -70,13 +70,15 @@ def process(nmap_xml_file,  output_dir = OUTPUT_DIR, txtout = 'output.txt', csvo
                     targets.append(target)
                     info(target)
 
+    unique_targets = list(dict.fromkeys(targets))
+
     check_or_create_dir(output_dir)
 
     file_mode = 'a+' if append else 'w'
 
     with open(path.join(output_dir, txtout), file_mode, encoding='utf-8', newline='') as file:
         info(f"Store baseurls in {path.join(output_dir, txtout)}")
-        for target in targets:
+        for target in unique_targets:
             file.write(f"{target}\n")
         info("TXT file correctly created!")
 
